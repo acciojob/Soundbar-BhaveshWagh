@@ -1,39 +1,24 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Board</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<div id="buttons">
-        <button class="btn" >applause</button>
-        <button class="btn" >boo</button>
-        <button class="btn" >gasp</button>
-        <button class="btn" >tada</button>
-        <button class="btn" >victory</button>
-        <button class="btn" >wrong</button>
-
+    <div id="buttons">
+        <button class="btn" data-sound="sounds/applause.mp3">applause</button>
+        <button class="btn" data-sound="sounds/boo.mp3">boo</button>
+        <button class="btn" data-sound="sounds/gasp.mp3">gasp</button>
+        <button class="btn" data-sound="sounds/tada.mp3">tada</button>
+        <button class="btn" data-sound="sounds/victory.mp3">victory</button>
+        <button class="btn" data-sound="sounds/wrong.mp3">wrong</button>
         <button class="stop">Stop</button>
     </div>
 
-    <!-- <audio id="audioPlayer" controls></audio> -->
-	<!-- <div>
-	<ul id="buttons">
-		<li class="btn">applause</li>
-		<li >boo</li>
-		<li>gasp</li>
-		<li>tada</li>
-		<li>victory</li>
-		<li>wrong</li>
-		<li>stop</li>
-	</ul>
-	</div> -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <audio id="audioPlayer"></audio>
 
+    <script src="script.js"></script>
 </body>
-
 </html>
